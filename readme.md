@@ -48,9 +48,8 @@ Sistemin beyni olarak çalışan, Express.js tabanlı web arayüzü.
 *   **Token Injection:** Puppeteer ile giriş yapıp `SESSION_TOKEN` ve `REQUEST_HASH` değerlerini yakalar, ardından bu tokenları kullanarak tarayıcıyı yormadan arka planda API çağrıları yapar.
 
 ### 4. Account Crawler (Multi-Threaded)
-*   Belirlenen ID aralıklarını tarayarak "geri alınabilir" (silinmiş e-postalara bağlı) eski hesapları tespit eder.
 *   **Worker Threads:** CPU yoğunluklu işlemleri (Regex parsing, XML parsing) ana thread'den izole ederek arayüzün donmasını engeller.
-*   **Cross-Check:** Bulunan hesapların e-postalarını Microsoft (Hotmail/Outlook) ve Stardoll API'lerinde çapraz sorgular.
+*   **Cross-Check:** Bulunan hesapları Stardoll API'lerinde çapraz sorgular.
 
 ## 📊 Performans İyileştirmeleri
 
